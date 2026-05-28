@@ -1,0 +1,181 @@
+ <!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประวัติส่วนตัว - เว็บไซต์ส่วนตัวของฉัน</title>
+    <style>
+        /* สไตล์พื้นฐานโทนสีม่วง (เข้าชุดกับหน้าแรก) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f0f9;
+            color: #4a375a;
+        }
+        header {
+            background-color: #4a2874;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #613893;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #9b5de5;
+        }
+        /* ส่วนเนื้อหาของประวัติส่วนตัว */
+        .container {
+            max-width: 800px;
+            margin: 30px auto 80px auto; /* เพิ่ม margin ด้านล่างเผื่อพื้นที่ไม่ให้ทับกับ Footer */
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 4px 12px rgba(100, 50, 150, 0.08);
+            border-radius: 8px;
+        }
+        .profile-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        /* ส่วนของรูปภาพโปรไฟล์ */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #613893;
+            background-color: #e2d4f0; /* สีพื้นหลังชั่วคราวระหว่างรอใส่รูปภาพจริง */
+        }
+        h2 {
+            color: #4a2874;
+            border-bottom: 2px solid #e2d4f0;
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        @media (max-width: 600px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .info-item strong {
+            color: #613893;
+        }
+        /* ส่วนแถบแสดงทักษะความสามารถ (Skills) */
+        .skill-bar {
+            background-color: #e2d4f0;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+        .skill-per {
+            background-color: #9b5de5;
+            height: 20px;
+            color: white;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: right;
+            padding-right: 10px;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4a2874;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <h1>About Me</h1>
+    </header>
+
+
+    <nav>
+        <a href="index.html">หน้าแรก</a>
+        <a href="profile.html">ประวัติส่วนตัว</a>
+        <a href="portfolio.html">ผลงานที่น่าภูมิใจ</a>
+    </nav>
+
+
+    <div class="container">
+       
+        <div class="profile-header">
+            <img src="https://via.placeholder.com/150" alt="รูปโปรไฟล์ของคุณ" class="profile-img">
+            <h1 style="color: #4a2874; margin-top: 15px;">ณัฐมล กล้าหาญ</h1>
+            <p style="color: #613893; font-style: italic;">นักเรียนมัธยมศึกษาปีที่3</p>
+        </div>
+
+
+        <h2>ข้อมูลส่วนตัว (Personal Info)</h2>
+        <div class="info-grid">
+            <div class="info-item"><strong>ชื่อเล่น:</strong> อ๋อมแอ๋ม</div>
+            <div class="info-item"><strong>วันเกิด:</strong> 10 กันยายน 25XX</div>
+            <div class="info-item"><strong>อีเมล:</strong> stu2339@banglad.ac.th</div>
+            <div class="info-item"><strong>เบอร์โทรศัพท์:</strong> 0638807355</div>
+            <div class="info-item"><strong>ที่อยู่:</strong> กำเเพงเพชร, ประเทศไทย</div>
+            <div class="info-item"><strong>ความสนใจ:</strong> การเขียนโค้ด, ถ่ายภาพ, อ่านหนังสือ</div>
+        </div>
+
+
+        <h2>ประวัติการศึกษา (Education)</h2>
+        <ul>
+           
+            <li><strong>มัธยมศึกษา:</strong> โรงเรียนบ้านบางลาด </li>
+        </ul>
+
+
+        <h2>ทักษะความสามารถ (Skills)</h2>
+       
+        <p>HTML / CSS</p>
+        <div class="skill-bar">
+            <div class="skill-per" style="width: 90%;">90%</div>
+        </div>
+
+
+        <p>JavaScript</p>
+        <div class="skill-bar">
+            <div class="skill-per" style="width: 75%;">75%</div>
+        </div>
+
+
+        <p>Graphic Design</p>
+        <div class="skill-bar">
+            <div class="skill-per" style="width: 80%;">80%</div>
+        </div>
+
+
+    </div>
+
+
+    <footer>
+        <p>&copy; 2026 เว็บไซต์ส่วนตัวของฉัน. All Rights Reserved.</p>
+    </footer>
+
+
+</body>
+</html>
