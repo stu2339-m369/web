@@ -1,0 +1,171 @@
+ <!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ผลงานที่น่าภูมิใจ - เว็บไซต์ส่วนตัวของฉัน</title>
+    <style>
+        /* สไตล์พื้นฐานโทนสีม่วง (เข้าชุดกับหน้าแรกและหน้าประวัติ) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f0f9;
+            color: #4a375a;
+        }
+        header {
+            background-color: #4a2874;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #613893;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #9b5de5;
+        }
+        /* ส่วนเนื้อหาหลัก */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto 80px auto; /* เผื่อพื้นที่ด้านล่างไม่ให้ทับ Footer */
+            padding: 20px;
+        }
+        .page-title {
+            text-align: center;
+            color: #4a2874;
+            margin-bottom: 30px;
+        }
+        /* ระบบ Grid สำหรับจัดวางกล่องผลงาน */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        /* กล่องการ์ดผลงานแต่ละชิ้น */
+        .portfolio-item {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(100, 50, 150, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .portfolio-item:hover {
+            transform: translateY(-5px); /* เอฟเฟกต์ยกตัวขึ้นเมื่อเมาส์ชี้ */
+            box-shadow: 0 6px 18px rgba(100, 50, 150, 0.15);
+        }
+        /* รูปภาพผลงาน */
+        .portfolio-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background-color: #e2d4f0; /* สีพื้นหลังระหว่างรอใส่รูปจริง */
+        }
+        /* ข้อความในชิ้นงาน */
+        .portfolio-info {
+            padding: 20px;
+        }
+        .portfolio-info h3 {
+            margin: 0 0 10px 0;
+            color: #4a2874;
+        }
+        .portfolio-info p {
+            margin: 0 0 15px 0;
+            font-size: 0.95em;
+            color: #666;
+        }
+        /* แท็กหมวดหมู่ผลงาน */
+        .tag {
+            display: inline-block;
+            background-color: #e2d4f0;
+            color: #613893;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4a2874;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+
+
+    <nav>
+        <a href="index.html">หน้าแรก</a>
+        <a href="profile.html">ประวัติส่วนตัว</a>
+        <a href="portfolio.html">ผลงานที่น่าภูมิใจ</a>
+    </nav>
+
+
+    <div class="container">
+        <h2 class="page-title">ผลงานที่น่าภูมิใจ</h2>
+
+
+        <div class="portfolio-grid">
+           
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/400x250" alt="รูปผลงาน 1" class="portfolio-img">
+                <div class="portfolio-info">
+                    <span class="tag">Web Development</span>
+                    <h3 style="margin-top: 10px;">โปรเจกต์พัฒนาเว็บไซต์ส่วนตัว</h3>
+                    <p>ออกแบบและพัฒนาเว็บไซต์ส่วนตัวด้วยภาษา HTML และ CSS โทนสีม่วงพาสเทล รองรับการแสดงผลทุกหน้าจออย่างสมบูรณ์แบบ</p>
+                </div>
+            </div>
+
+
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/400x250" alt="รูปผลงาน 2" class="portfolio-img">
+                <div class="portfolio-info">
+                    <span class="tag">Graphic Design</span>
+                    <h3 style="margin-top: 10px;">ออกแบบ Infographic สรุปความรู้</h3>
+                    <p>ผลงานการออกแบบสื่ออินโฟกราฟิกเพื่อใช้ในการนำเสนองานวิชาการ ได้รับคำชมเชยด้านการจัดวางและเลือกใช้คู่สีที่อ่านง่าย</p>
+                </div>
+            </div>
+
+
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/400x250" alt="รูปผลงาน 3" class="portfolio-img">
+                <div class="portfolio-info">
+                    <span class="tag">Other Academic</span>
+                    <h3 style="margin-top: 10px;">รางวัลประกวดทักษะวิชาการ</h3>
+                    <p>ได้รับรางวัลรองชนะเลิศอันดับ 1 ในการประกวดทักษะด้านเทคโนโลยีระดับสถานศึกษา ประจำปีการศึกษาที่ผ่านมา</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2026 เว็บไซต์ส่วนตัวของฉัน. All Rights Reserved.</p>
+    </footer>
+
+
+</body>
+</html>
