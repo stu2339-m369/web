@@ -1,0 +1,206 @@
+ <!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ช่องทางการติดต่อ - เว็บไซต์ส่วนตัวของฉัน</title>
+    <style>
+        /* สไตล์พื้นฐานโทนสีม่วง (เข้าชุดกับทุกหน้า) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f0f9;
+            color: #4a375a;
+        }
+        header {
+            background-color: #4a2874;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #613893;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #9b5de5;
+        }
+        /* ส่วนเนื้อหาหลักแบบสองคอลัมน์ */
+        .container {
+            max-width: 900px;
+            margin: 30px auto 80px auto; /* เผื่อพื้นที่ไม่ให้ทับ Footer */
+            padding: 20px;
+        }
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(100, 50, 150, 0.08);
+        }
+        @media (max-width: 768px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr; /* ปรับเป็นแถวเดียวเมื่อเปิดในมือถือ */
+            }
+        }
+        h2 {
+            color: #4a2874;
+            margin-top: 0;
+            border-bottom: 2px solid #e2d4f0;
+            padding-bottom: 10px;
+        }
+        /* ฝั่งข้อมูลการติดต่อ */
+        .contact-info p {
+            margin: 15px 0;
+            font-size: 1.1em;
+        }
+        .contact-info strong {
+            color: #613893;
+        }
+        .social-btn {
+            display: inline-block;
+            background-color: #613893;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            margin-top: 10px;
+            font-size: 0.9em;
+            transition: background 0.3s;
+        }
+        .social-btn:hover {
+            background-color: #9b5de5;
+        }
+        /* ฝั่งฟอร์มส่งข้อความ */
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #613893;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: #9b5de5;
+            box-shadow: 0 0 5px rgba(155, 93, 229, 0.3);
+        }
+        .submit-btn {
+            background-color: #9b5de5;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1em;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #7b2cbf;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4a2874;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+
+
+    <nav>
+        <a href="index.html">หน้าแรก</a>
+        <a href="profile.html">ประวัติส่วนตัว</a>
+        <a href="portfolio.html">ผลงานที่น่าภูมิใจ</a>
+        <a href="contact.html">ช่องทางการติดต่อ</a>
+    </nav>
+
+
+    <div class="container">
+        <div class="contact-wrapper">
+           
+            <div class="contact-info">
+                <h2>ณัฐมล กล้าหาญ</h2>
+                <p>หากคุณมีข้อสงสัย ต้องการติดต่อร่วมงาน หรือพูดคุยแลกเปลี่ยน สามารถติดต่อฉันได้ตามช่องทางด้านล่างนี้เลยครับ/ค่ะ</p>
+               
+                <p><strong>ที่อยู่:</strong> กำเเพงเพชร, ประเทศไทย</p>
+                <p><strong>อีเมล:</strong> stu2339@banglad.ac.th</p>
+                <p><strong>โทรศัพท์:</strong> 0638807355</p>
+               
+                <div style="margin-top: 25px;">
+                    <a href="#" target="_blank" class="social-btn">Facebook</a>
+                    <a href="#" target="_blank" class="social-btn">Instagram</a>
+                    <a href="#" target="_blank" class="social-btn">GitHub</a>
+                </div>
+            </div>
+
+
+            <div class="contact-form">
+                <h2>ส่งข้อความหาฉัน</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">ชื่อผู้ติดต่อ:</label>
+                        <input type="text" id="name" name="name" placeholder="กรุณากรอกชื่อของคุณ" required>
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="email">อีเมลของคุณ:</label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="message">ข้อความ:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="พิมพ์ข้อความที่ต้องการติดต่อที่นี่..." required></textarea>
+                    </div>
+                   
+                    <button type="submit" class="submit-btn">ส่งข้อความ</button>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2026 เว็บไซต์ส่วนตัวของฉัน. All Rights Reserved.</p>
+    </footer>
+
+
+</body>
+</html>
